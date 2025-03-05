@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react"; // Import useState
 import classNames from "classnames";
 import SunIcon from "./lottie-ui/sun-icon";
 import MoonIcon from "./lottie-ui/moon-icon";
@@ -9,7 +9,7 @@ import CardWrapper from "./cards/card-wrapper";
 
 const ThemeToggle = () => {
   const { resolvedTheme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const [mounted, setMounted] = useState(false); // Now useState is defined
 
   useEffect(() => {
     if (resolvedTheme !== "light") {
