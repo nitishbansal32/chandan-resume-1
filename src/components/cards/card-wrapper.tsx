@@ -19,13 +19,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
     <div className="group w-full h-full relative overflow-hidden rounded-3xl p-px dark:bg-white/10 bg-white/60">
       {resolvedTheme === "dark" && (
         <>
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `
-                #e0dfe3`,
-            }}
-          />
+          <div className="absolute inset-0" style={{ background: "#ffffff" }} />
           <div
             className="shine absolute -inset-2 opacity-40 blur-md z-10"
             style={{
@@ -38,7 +32,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
 
           <div
             className="absolute inset-px rounded-3xl"
-            style={{ background: "#ede9e9" }}
+            style={{ background: "#ffffff" }}
           />
         </>
       )}

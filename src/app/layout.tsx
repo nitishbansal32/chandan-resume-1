@@ -34,7 +34,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${silka.className}`}>
+      <body
+        className={`${silka.className}`}
+        style={{
+          background: "linear-gradient(19deg, #faaca85c 0%, #ddd6f32e 120%)",
+        }}
+      >
         <ThemeProvider attribute="class">
           <div
             style={{
