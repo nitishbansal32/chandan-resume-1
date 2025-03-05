@@ -23,11 +23,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
             className="absolute inset-0"
             style={{
               backgroundImage: `
-                radial-gradient(
-                  circle at 50% 150%,
-                  #208de52b,
-                  transparent
-                )`,
+                #e0dfe3`,
             }}
           />
           <div
@@ -36,16 +32,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
               maskImage: shineMaskImage,
               WebkitMaskImage: shineMaskImage,
               backgroundImage: `
-                conic-gradient(
-                  from -45deg at 50% 150%,
-                  transparent 0deg,
-                  #10071e 15deg,
-                  transparent 30deg,
-                  #10071e 45deg,
-                  transparent 60deg,
-                  #10071e 75deg,
-                  transparent 90deg
-                )`,
+                #e0dfe3`,
             }}
           />
 
