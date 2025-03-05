@@ -36,12 +36,18 @@ export default function CardWrapper({ children }: CardWrapperProps) {
             }}
           />
 
-          <div className="absolute inset-px rounded-3xl bg-zinc-950/70 transition-colors duration-300 group-hover:bg-black/75" />
+          <div
+            className="absolute inset-px rounded-3xl"
+            style={{ background: "#e0dfe3" }}
+          />
         </>
       )}
       {resolvedTheme === "light" && (
         <>
-          <div className="absolute inset-px rounded-3xl bg-white/5 transition-colors duration-300 group-hover:bg-white/70" />
+          <div
+            className="absolute inset-px rounded-3xl"
+            style={{ background: "#e0dfe3" }}
+          />
 
           <div
             className="absolute inset-0"
