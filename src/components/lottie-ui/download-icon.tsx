@@ -19,7 +19,7 @@ const Download = () => {
       renderer: "svg",
       loop: false,
       autoplay: false,
-      animationData: isLightMode ? InboxDownAnimation : InboxDownLightAnimation,
+      animationData: InboxDownAnimation,
       container: downloadContainer.current,
       rendererSettings: {
         preserveAspectRatio: "xMinYMin slice",
@@ -51,7 +51,12 @@ const Download = () => {
   };
 
   return (
-    <a href="/chandana-resume.pdf" download className="relative z-10">
+    <a
+      href="/chandana-resume.pdf"
+      download
+      className="relative z-10"
+      style={{ filter: "brightness(0)" }}
+    >
       <div
         ref={downloadContainer}
         onMouseEnter={lottieHover}

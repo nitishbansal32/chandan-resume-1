@@ -56,6 +56,7 @@ const SendIcon = () => {
       target="_blank"
       rel="noreferrer noopener"
       className="relative z-10"
+      style={{ filter: "brightness(0)" }}
     >
       <div
         ref={sendIconContainer}
