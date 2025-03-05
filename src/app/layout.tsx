@@ -37,7 +37,8 @@ export default function RootLayout({
       <body
         className={`${silka.className}`}
         style={{
-          background: "linear-gradient(19deg, #faaca85c 0%, #ddd6f32e 120%)",
+          backgroundColor: "#FAACA8", // Solid background color
+          backgroundImage: "linear-gradient(19deg, #FAACA8 0%, #DDD6F3 100%)", // Gradient
         }}
       >
         <ThemeProvider attribute="class">
