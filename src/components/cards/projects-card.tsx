@@ -1,7 +1,15 @@
 import CardWrapper from "@/components/cards/card-wrapper";
 import classNames from "classnames";
 
-const projectsData = [
+// Define the type for the project object
+type Project = {
+  title: string;
+  date: string;
+  details: string[];
+  techStack: string;
+};
+
+const projectsData: Project[] = [
   {
     title:
       "Network Intrusion Detection System using Multi Model Decision Trees and Phishing Detection using ML",
@@ -40,7 +48,7 @@ const projectsData = [
   },
 ];
 
-const ProjectItem = ({ project }: { project: project }) => {
+const ProjectItem = ({ project }: { project: Project }) => {
   const { title, date, details, techStack } = project;
 
   return (
