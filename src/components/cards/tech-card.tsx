@@ -46,8 +46,8 @@ const MyTechCard = () => {
         <Marquee
           speed={30}
           style={{
-            maskImage:
-              "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)",
+            // maskImage:
+            //   "linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 12.5%, rgb(0, 0, 0) 87.5%, rgba(0, 0, 0, 0) 100%)",
             margin: "auto",
           }}
         >
@@ -58,6 +58,8 @@ const MyTechCard = () => {
               style={{
                 background: "#ffffff",
                 boxShadow: "0px 0px 12px rgba(0,0,0,0.115)",
+                marginTop: "6px",
+                marginBottom: "6px",
               }}
             >
               <Image src={tech.icon} alt={tech.name} width={36} height={36} />
