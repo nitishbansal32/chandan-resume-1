@@ -38,7 +38,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
 
           <div
             className="absolute inset-px rounded-3xl"
-            style={{ background: "#ede8d0" }}
+            style={{ background: "#ede9e9" }}
           />
         </>
       )}
@@ -46,7 +46,7 @@ export default function CardWrapper({ children }: CardWrapperProps) {
         <>
           <div
             className="absolute inset-px rounded-3xl"
-            style={{ background: "#ede8d0" }}
+            style={{ background: "#ede9e9" }}
           />
 
           <div
