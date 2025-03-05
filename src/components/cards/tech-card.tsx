@@ -55,7 +55,10 @@ const MyTechCard = () => {
             <div
               key={index}
               className="flex items-center justify-center gap-2 aspect-square w-[72px] rounded-2xl mx-2 my-0"
-              style={{ background: "#969696" }}
+              style={{
+                background: "#ffffff",
+                boxShadow: "0px 0px 12px rgba(0,0,0,0.115)",
+              }}
             >
               <Image src={tech.icon} alt={tech.name} width={36} height={36} />
             </div>
